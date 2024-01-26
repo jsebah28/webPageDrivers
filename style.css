@@ -11,20 +11,22 @@
     --emphasisgraycolor: #D9E0E960;
     --green: #54A956;
     --blurcards: 100px;
-    font-size: 80%;
+    font-size: 90%;
 }
 
 .background-blur{
     backdrop-filter: blur(var(--blurcards));
+-webkit-backdrop-filter: blur(var(--blurcards));
 }
 
-html {
-    margin: 0;
-    padding: 0;
+html{
+    margin: 0rem;
+    padding: 0rem;
+    overflow: hidden;
 }
 
 
-* {
+*:not(summary) {
     font-family: "Roboto", sans-serif;
     color: var(--fontcolor);
     list-style: none;
@@ -40,12 +42,20 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     display: grid;
+    align-items: center;
     grid-template-columns: auto 1fr;
+    grid-template-rows: 1fr;
     grid-template-areas: 
     "aside content"
     ;
     max-height: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding: 1rem;
+    box-sizing: border-box;
 }
+
+
 
 .tooltip {
     display: none;
@@ -56,21 +66,13 @@ body {
     z-index: 1;
 }
 
-.tooltip-deleted {
-    display: none;
-    position: fixed;
-    background-color: #F0504D10;
-    color: #F0504D;
-    padding: 0.5rem;
-    z-index: 1;
-}
 
 @media (width <= 900px) {
     .sidebar {
         display: none;
     }
     :root {
-        font-size: 60%;
+        font-size: 70%;
     }
 
     body {
@@ -86,11 +88,7 @@ body {
 }
 
 @media (width >= 900px) {
-    .main-section{
-        
-        
-        
-    }
+   
 
    
 }
@@ -98,6 +96,10 @@ body {
 aside {
     grid-area: aside;
     padding: 1rem;
+    max-height: 80%;
+    min-height: 80%;
+    backdrop-filter: blur(var(--blurcards));
+    -webkit-backdrop-filter: blur(var(--blurcards));
 }
 
 .conected-status-label {
@@ -112,15 +114,7 @@ aside {
     gap: 0.2rem;
 }
 
-.circle-conected {
-    animation: circle 10ms linear 2s infinite alternate;
-}
 
-@keyframes circle {
-    50%{width: 10px;}
-    100%{width: 60px;}
-    
-}
 
 .sidebar{
     background-color: var(--cardscolor);
@@ -133,27 +127,26 @@ aside {
     padding: 0;
     row-gap: 1rem;
 }
-
-#elemento1 {
-    
-}
-
 .main-section{
+    padding: 1rem;
     display: grid;
     grid-template-columns: 1fr;
     overflow-y: scroll;
     width: auto;
-    min-height: 100vh;
+    max-height: 100vh;
     place-self: center;
     grid-area: content;
     border-radius: 1rem;
-    padding: 1rem 0.5rem;
+    padding: 1rem 0.5rem 3rem 0.5rem;
     background-color: var(--cardscolor);
     backdrop-filter: blur(var(--blurcards));
+    -webkit-backdrop-filter: blur(var(--blurcards));
     place-content: center;
     align-content: flex-start;
     min-width: 60%;
-    
+    min-height: 100%;
+    box-sizing: border-box;
+    margin: 1rem;
 }
 
 h1, h2, p {
@@ -168,12 +161,10 @@ h2 {
 }
 
 .default-card {
-    transition: all 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) 0s;
-   
-    
+    transition: all 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) 0s; 
 }
 
-.default-card:hover {
+.default-card:hover{
     transition: all 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) 0s;
     background-color: rgba(255, 255, 255, 0.40);
     box-shadow: #3C3C3F20 2px 2px 5px 0px;
@@ -220,6 +211,11 @@ h2 {
     background-color: var(--cardscolor3);
     padding: 0.5rem;
     border-radius: 0.3rem;
+}
+
+details[open] > summary.title-cards{
+    margin-bottom: 1rem;
+    transition: all 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) 0s; 
 }
 
 .column-titles{
@@ -293,6 +289,7 @@ h2 {
     background-color: var(--cardscolor2);
     border-radius: 0.6rem;
     backdrop-filter: blur(var(--blurcards));
+-webkit-backdrop-filter: blur(var(--blurcards));
     padding: 1rem 1rem;
 }
 
