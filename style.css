@@ -41,6 +41,8 @@ body {
     background-image: url(./images/2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     display: grid;
     align-items: center;
     grid-template-columns: auto 1fr;
