@@ -26,7 +26,6 @@ html {
 * {
     font-family: "Roboto", sans-serif;
     color: var(--fontcolor);
-    transition: all ease-in-out 500ms;
     list-style: none;
 }
 
@@ -45,6 +44,24 @@ body {
     "aside content"
     ;
     max-height: 100%;
+}
+
+.tooltip {
+    display: none;
+    position: fixed;
+    background-color: #333;
+    color: #fff;
+    padding: 0.5rem;
+    z-index: 1;
+}
+
+.tooltip-deleted {
+    display: none;
+    position: fixed;
+    background-color: #F0504D10;
+    color: #F0504D;
+    padding: 0.5rem;
+    z-index: 1;
 }
 
 @media (width <= 400px) {
@@ -113,6 +130,9 @@ aside {
     row-gap: 1rem;
 }
 
+#elemento1 {
+    
+}
 
 .main-section{
     display: grid;
@@ -143,12 +163,18 @@ h2 {
     font-weight: 700;
 }
 
+.default-card {
+    transition: all 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) 0s;
+   
+    
+}
+
 .default-card:hover {
-    transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1) 0s;
+    transition: all 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) 0s;
     background-color: rgba(255, 255, 255, 0.40);
     box-shadow: #3C3C3F20 2px 2px 5px 0px;
     transform: scale(1.01);
-    
+    cursor: pointer;
     
 }
 
