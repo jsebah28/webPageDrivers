@@ -543,6 +543,7 @@ details[open] .arrow-summary {
         "content"
         "circles";
         gap: 1rem;
+        overflow-y: scroll
     ;
     }
 
