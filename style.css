@@ -77,7 +77,7 @@ html{
 
 
 * {
-    font-family: 'Roboto';
+    font-family: "Roboto", sans-serif;
     color: var(--fontcolor);
     list-style: none;
     
