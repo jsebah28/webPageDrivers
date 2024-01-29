@@ -55,7 +55,7 @@ html{
 }
 
 body {
-    background-image: url(images/fondo.png);
+    background-image: url(/images/fondo.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -166,13 +166,13 @@ aside {
 }
 
 .circle1{
-    background-image: url(images/2.jpg);
+    background-image: url(/images/2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .circle2{
-    background-image: url(images/1.jpg);
+    background-image: url(/images/1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
