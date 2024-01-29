@@ -1,3 +1,52 @@
+/* Reset CSS https://www.joshwcomeau.com/css/custom-css-reset/ */
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  /*
+    2. Remove default margin
+  */
+  * {
+    margin: 0;
+  }
+  /*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+  */
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  /*
+    5. Improve media defaults
+  */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  /*
+    6. Remove built-in form typography styles
+  */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  /*
+    7. Avoid text overflows
+  */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  /*
+    8. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
+/*  */
+
 :root {
     --cardscolor: rgba(255, 255, 255, 0.40);
     --cardscolor2: rgba(255, 255, 255, 0.15);
@@ -42,9 +91,7 @@ html{
         font-size: 70%;
     }
 
-    .main-section {
-       
-    }
+    
 
     body {
         grid-template-columns: 1fr;
@@ -55,14 +102,14 @@ html{
 }
 
 body {
-    background-image: url(./images/fondo.png);
+    background-image: url(./images/2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     display: grid;
     align-items: center;
-    grid-template-columns: auto 1fr auto;
+    grid-template-columns: minmax(auto, 18rem) 1fr auto;
     grid-template-rows: 1fr;
     grid-template-areas: 
     "aside content circles"
@@ -107,15 +154,17 @@ aside {
     backdrop-filter: blur(var(--blurcards));
     -webkit-backdrop-filter: blur(var(--blurcards));
     border-radius: 1rem;
+    width: 100%;
 }
 
 .user-login-box{
     display: grid;
-    grid-template-columns: minmax(2rem, 2rem) 1fr;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: minmax(3rem, 5rem);
     background-color: var(--cardscolor3);
-    padding: 0.5rem;
+    padding: 1rem;
     border-radius: 1rem;
-    gap: 1rem;
+    gap: 1.5rem;
     align-items: center;
     height: fit-content;
 }
@@ -126,10 +175,11 @@ aside {
     display: grid;
     grid-template-columns: 1fr;
     row-gap: 0.2rem;
+    
 }
 
 .user-name {
-    font-weight: 600;
+    font-weight: 500;
     font-size: 1rem;
 }
 
@@ -181,7 +231,7 @@ aside {
    display: grid;
    grid-template-columns: 1fr;
    grid-template-rows: auto 1fr auto; 
-  
+    gap: 1rem;
    
 }
 
@@ -291,9 +341,12 @@ h2 {
 }
 
 .title-cards {
-    padding: 0.5rem;
     border-radius: 0.3rem;
-}
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 0.5rem;
+ }
 
 
 details[open] > summary.title-cards{
@@ -413,6 +466,15 @@ details[open] .arrow-summary {
     place-items: center;
 }
 
+.user-photo {
+    border-radius: 50%;
+    display: flex;
+    height: 100%;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+    place-items: center;
+}
+
 .circle-photos-box img{
     width: 100%;
     
@@ -461,9 +523,7 @@ details[open] .arrow-summary {
         display: none;
     }
 
-    .main-section {
-       
-    }
+  
 
     body {
         grid-template-columns: 1fr;
