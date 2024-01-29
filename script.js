@@ -34,3 +34,17 @@ document.getElementById('cambiarImagen2').addEventListener('click', function() {
   // Cambia la propiedad background-image
   miElemento.style.backgroundImage = 'url(images/1.jpg)';
 });
+
+document.getElementById('cambiarImagen3').addEventListener('click', function() {
+  // Obtén el elemento al que deseas cambiar la imagen de fondo
+  var miElemento = document.getElementById('body');
+  // Cambia la propiedad background-image
+  miElemento.style.backgroundImage = 'url(images/background.png)';
+});
+
+document.getElementById('cambiarImagen4').addEventListener('click', function() {
+  // Obtén el elemento al que deseas cambiar la imagen de fondo
+  var miElemento = document.getElementById('body');
+  // Cambia la propiedad background-image
+  miElemento.style.backgroundImage = 'url(images/3.jpg)';
+});
