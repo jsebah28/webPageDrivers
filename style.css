@@ -565,7 +565,7 @@ details[open] .arrow-summary {
 
     .change-background-circles {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(4, 1fr);
         grid-area: circles;
         justify-items: center;
         
