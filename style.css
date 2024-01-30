@@ -52,7 +52,7 @@
     --cardscolor2: rgba(255, 255, 255, 0.15);
     --cardscolor3: rgba(255, 255, 255, 0.40);
     --cardsborder: 0.8rem;
-    --fontcolor: #3C3C3F;
+    --fontcolor: #294255;
     --fontcolordarkmode: #FFFFFF;
     --secondaryfont: #6E6E72;
     --bluecolor: #056CD8;
@@ -264,6 +264,11 @@ aside {
     overflow-y: scroll;
 }
 
+.sidebar-icons-box img{
+    filter: invert(59%) sepia(8%) saturate(968%) hue-rotate(166deg) brightness(91%) contrast(88%);
+}
+
+
 .portal-items {
     display: grid;
     grid-template-columns: auto 1fr;
@@ -297,7 +302,7 @@ details summary::-webkit-details-marker {
     place-self: center;
     min-height: 100%;
     grid-area: content;
-    border-radius: 1rem;
+    border-radius: 2rem;
     padding: 1rem 0.5rem 0rem 0.5rem;
     background-color: var(--cardscolor);
     backdrop-filter: blur(var(--blurcards));
