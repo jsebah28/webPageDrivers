@@ -48,7 +48,7 @@
 /*  */
 
 :root {
-    --cardscolor: rgba(255, 255, 255, 0.40);
+    --cardscolor: rgba(255, 255, 255, 0.50);
     --cardscolor2: rgba(255, 255, 255, 0.15);
     --cardscolor3: rgba(255, 255, 255, 0.40);
     --cardsborder: 0.8rem;
@@ -291,7 +291,7 @@ details summary::-webkit-details-marker {
     display: grid;
     grid-template-columns: 1fr;
     grid-auto-rows: auto 1fr;
-    min-width: 65%;
+    min-width: 50%;
     max-height: 100%;
     overflow-y: scroll;
     place-self: center;
