@@ -48,7 +48,7 @@
 /*  */
 
 :root {
-    --cardscolor: rgba(255, 255, 255, 0.60);
+    --cardscolor: rgba(255, 255, 255, 0.40);
     --cardscolor2: rgba(255, 255, 255, 0.15);
     --cardscolor3: rgba(255, 255, 255, 0.40);
     --cardsborder: 0.8rem;
@@ -146,7 +146,7 @@ body {
 .exit {
     background-color: var(--cardscolor3);
     border-radius: 0.6rem;
-    padding-left: 0.5rem;
+    padding: 0.5rem;
 }
 
 aside {
@@ -317,6 +317,7 @@ h2 {
 
 .default-card {
     transition: all 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) 0s; 
+    border: #e0e9f3 1px solid;
 }
 
 .default-card:hover{
@@ -544,7 +545,8 @@ details[open] .arrow-summary {
     font-size: 1rem;
 }
 
-@media (max-width: 576px) {
+
+@media (max-width: 770px) {
     :root {
         font-size: 70%;
     }
@@ -578,6 +580,10 @@ details[open] .arrow-summary {
 
     }
 }
+
+
+
+
 
 
 
