@@ -39,7 +39,7 @@ document.getElementById('cambiarImagen3').addEventListener('click', function() {
   // Obtén el elemento al que deseas cambiar la imagen de fondo
   var miElemento = document.getElementById('body');
   // Cambia la propiedad background-image
-  miElemento.style.backgroundImage = 'url(images/background.png)';
+  miElemento.style.backgroundImage = 'url(images/background2.png)';
 });
 
 document.getElementById('cambiarImagen4').addEventListener('click', function() {
