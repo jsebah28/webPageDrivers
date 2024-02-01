@@ -19,6 +19,7 @@ function agregarTooltip(elementoId, textoTooltip) {
 
 agregarTooltip('elemento1', 'Ir a la información del conductor');
 agregarTooltip('elemento2', 'Desvincular conductor');
+agregarTooltip('driver-photo', 'Ampliar foto');
 
 /* modificar fondo */
 document.getElementById('cambiarImagen').addEventListener('click', function() {

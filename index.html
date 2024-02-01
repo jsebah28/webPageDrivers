@@ -130,30 +130,25 @@
 
     <div class="main-section">
         <div class="header-info-movil">
-            <div class="info-movil">
-                <div class="infor-movil-2">
-                    <div class="placa">
-                        <div class="conected-status">
-                            <svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg" >
-                                <circle class="circle-conected" cx="3" cy="3" r="3" fill="#54A956" />
-                            </svg>
-                            <p class="conected-status-label">Completo</p>
-                        </div>
-                        <h2>Móvil 382</h2>
-                    </div>
-                    <div class="placa">
-                        <div class="movil-status">
-                            <p>Placa asignada al móvil · 09/10/2021</p>
-                        </div>
-                        <h2>SSY224</h2>
-                    </div>
-                    <div class="placa">
-                        <button class="button-style-2">Liberar</button>
-                    </div>
+            <div class="placa">
+                <div class="conected-status">
+                    <svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg" >
+                        <circle class="circle-conected" cx="3" cy="3" r="3" fill="#54A956" />
+                    </svg>
+                    <p class="conected-status-label">Completo</p>
                 </div>
-
-            </div> 
-        </div>
+                <h2>Móvil 382</h2>
+            </div>
+            <div class="placa">
+                <div class="movil-status">
+                    <p>Placa asignada al móvil · 09/10/2021</p>
+                </div>
+                <h2>SSY224</h2>
+            </div>
+            <div class="placa">
+                <button class="button-style-2">Liberar</button>
+            </div>
+        </div> 
 
         <div class="info-movil-scroll">
             <div class="collapse-title">
@@ -165,7 +160,7 @@
             <!-- Card del conductor -->
             <div class="driver-card default-card">
                 <div class="info-driver-2">
-                    <div class="circle-photos-box" >
+                    <div class="circle-photos-box" id="driver-photo" >
                         <img src="./images/driver-1.png" alt="" >
                     </div>
                     <div class="info-driver">
@@ -217,53 +212,88 @@
             </div>
               -->
 
-            <!-- card informacion colapsable dos columnas -->
+              <!-- Card colapsable informacion dos columnas -->
             <details class="info-basic-card default-card">
                 <summary class="title-cards collapsed-title">
                     <img src="./images/arrow.svg" alt="" class="arrow-summary">
                     <span>Datos básicos</span>
                 </summary>
-                <div class="info-table">
-                    <div class="column-titles">
-                        <span>Marca:</span>
-                        <span>Línea:</span>
-                        <span>Modelo:</span>
-                        <span>Carrocería:</span>
-                        <span>Chasis</span>
-                    </div>
-                    <div class="column-info">
-                        <span>KIA</span>
-                        <span>Picanto XL</span>
-                        <span>2011</span>
-                        <span>HATCH BACK</span>
-                        <span>KNABJ513ABT050342</span>
-                    </div>
-                </div>
+                <table class="info-table">
+                    <tr>
+                        <td>Número de póliza:</td>
+                        <td>4308004576816000</td>
+                    </tr>
+                    <tr>
+                        <td>Empresa:</td>
+                        <td>LA PREVISORA COMPAÑIA DE SEGUROS</td>
+                    </tr>
+                    <tr>
+                        <td>Fecha de expedición:</td>
+                        <td>16/11/2023</td>
+                    </tr>
+                    <tr>
+                        <td>Fecha de vencimiento:</td>
+                        <td>16/11/2024</td>
+                    </tr>
+                </table>
             </details>
             <!--  -->
 
-            <!-- card informacion colapsable dos columnas -->
+            <!-- Card colapsable informacion dos columnas -->
             <details class="info-basic-card default-card">
                 <summary class="title-cards collapsed-title">
                     <img src="./images/arrow.svg" alt="" class="arrow-summary">
                     <span>SOAT</span>
                 </summary>
-                <div class="info-table">
-                    <div class="column-titles">
-                        <span>Número de póliza:</span>
-                        <span>Empresa:</span>
-                        <span>Fecha de expedición:</span>
-                        <span>Fecha de vencimiento:</span>
-                    </div>
-                    <div class="column-info">
-                        <span>4308004576816000</span>
-                        <span>LA PREVISORA COMPAÑIA DE SEGUROS</span>
-                        <span>16/11/2023</span>
-                        <span>16/11/2024</span>
-                    </div>
-                </div>
+                <table class="info-table">
+                    <tr>
+                        <td>Número de póliza:</td>
+                        <td>4308004576816000</td>
+                    </tr>
+                    <tr>
+                        <td>Empresa:</td>
+                        <td>LA PREVISORA COMPAÑIA DE SEGUROS</td>
+                    </tr>
+                    <tr>
+                        <td>Fecha de expedición:</td>
+                        <td>16/11/2023</td>
+                    </tr>
+                    <tr>
+                        <td>Fecha de vencimiento:</td>
+                        <td>16/11/2024</td>
+                    </tr>
+                </table>
             </details>
             <!--  -->
+
+            <!-- Card colapsable informacion dos columnas -->
+            <details class="info-basic-card default-card">
+                <summary class="title-cards collapsed-title">
+                    <img src="./images/arrow.svg" alt="" class="arrow-summary">
+                    <span>Licencia de conducción</span>
+                </summary>
+                <table class="info-table">
+                    <tr>
+                        <td>Número de póliza:</td>
+                        <td>4308004576816000</td>
+                    </tr>
+                    <tr>
+                        <td>Empresa:</td>
+                        <td>LA PREVISORA COMPAÑIA DE SEGUROS</td>
+                    </tr>
+                    <tr>
+                        <td>Fecha de expedición:</td>
+                        <td>16/11/2023</td>
+                    </tr>
+                    <tr>
+                        <td>Fecha de vencimiento:</td>
+                        <td>16/11/2024</td>
+                    </tr>
+                </table>
+            </details>
+            <!--  -->
+
+            
 
             
             
